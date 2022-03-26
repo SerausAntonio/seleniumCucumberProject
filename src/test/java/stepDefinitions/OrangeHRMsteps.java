@@ -19,12 +19,7 @@ import java.net.URL;
 public class OrangeHRMsteps {
 
     DesiredCapabilities cap = new DesiredCapabilities();
-
-
     RemoteWebDriver driver;
-
-
-
     @Given("I launch chrome browser")
     public void i_launch_chrome_browser() {
       cap.setBrowserName(String.valueOf(CHROME));
@@ -33,7 +28,8 @@ public class OrangeHRMsteps {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        // Write code here that turns the phrase above into concrete actions
+       driver.get("https://www.orangehrm.com/");
+       System.out.println(driver.getTitle());
        System.out.println("I launche the chrome browser");
     }
     @When("I open orange hrm homepage")
