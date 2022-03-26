@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions( features="C://Users//User//IdeaProjects//SeleniumCucumberProject//Features//OrangeHRM.feature",
+@CucumberOptions( features="src//test//Features//OrangeHRM.feature",
                   glue = "stepDefinitions")
 public class TestRunner {
 
